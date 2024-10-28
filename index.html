@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget de Transporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-800">
+
+    <div class="bg-gray-900 rounded-lg shadow-lg p-6 w-full max-w-md">
+        <div class="flex items-center mb-4">
+            <div class="rounded-full overflow-hidden w-14 h-14 border-2 border-gray-700">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Driver Profile" class="w-full h-full object-cover">
+            </div>
+            <div class="ml-4">
+                <h2 class="text-lg font-bold text-white">Marcos</h2>
+                <div class="flex items-center">
+                    <span class="text-yellow-500">★★★★☆</span>
+                    <span class="text-gray-400 ml-2">3 min para chegar</span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4 mb-4 flex items-center">
+            <div class="flex-1">
+                <h3 class="font-bold text-white">Honda Civic - Vermelho</h3>
+                <p class="text-gray-400">Placa: ABC-1234</p>
+            </div>
+            <div class="text-red-600 text-4xl">
+                🚗
+            </div>
+        </div>
+        <div class="flex items-center border-t border-gray-700 pt-4">
+            <input type="text" placeholder="Enviar mensagem para Marcos..." class="flex-1 border border-gray-600 rounded-lg p-2 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button id="message-button" class="ml-2 p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2m8 0l-4 4m4-4l4 4m0-4l-4-4m4 0h-4" />
+                </svg>
+            </button>
+            <button id="call-button" class="ml-2 p-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 12h18M3 21h18" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
